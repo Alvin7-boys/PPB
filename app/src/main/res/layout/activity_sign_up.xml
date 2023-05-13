@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".view.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutInti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/signup_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aqua_border"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_username"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aqua_border"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_phone_number"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aqua_border"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aqua_border"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aqua_border"
+                android:drawableStart="@drawable/baseline_password_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_confirm_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="@string/btn_sign_up"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_btn1"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:id="@+id/SignUpRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/text_already_an_user_login"
+                android:textColor="#BBDEFB"
+                android:textSize="20sp"
+                android:layout_marginBottom="20px"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
